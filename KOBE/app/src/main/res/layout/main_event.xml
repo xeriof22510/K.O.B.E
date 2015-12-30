@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="1"
+    tools:context="com.example.user.kobe.event">
+
+    <TableRow>
+
+        <TextView
+            android:text="@string/title"
+            android:padding="6sp"
+            android:layout_margin="2sp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:background="@drawable/rectangle_drawable" />
+
+        <EditText
+            android:id="@+id/title_text"
+            android:hint="@string/enter_title"
+            android:padding="6sp"
+            android:layout_margin="2sp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:background="@drawable/rectangle_drawable" />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:text="@string/content"
+            android:layout_height="200sp"
+            android:layout_gravity="center_vertical"
+            android:padding="6sp"
+            android:layout_margin="2sp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:background="@drawable/rectangle_drawable" />
+
+        <EditText
+            android:id="@+id/content_text"
+            android:hint="@string/enter_content"
+            android:layout_gravity="top"
+            android:layout_height="200sp"
+            android:padding="6sp"
+            android:layout_margin="2sp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:background="@drawable/rectangle_drawable" />
+    </TableRow>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*">
+
+        <TableRow>
+
+            <ImageButton
+                android:id="@+id/set_alarm"
+                android:src="@drawable/alarm"
+                android:onClick="clickFunction" />
+
+            <ImageButton
+                android:id="@+id/select_color"
+                android:src="@drawable/color"
+                android:onClick="clickFunction" />
+
+        </TableRow>
+    </TableLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*">
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/ok_item"
+                android:text="OK"
+                android:onClick="onSubmit"
+                android:padding="6sp"
+                android:layout_margin="2sp"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <Button
+                android:id="@+id/cancel_item"
+                android:text="Cancel"
+                android:onClick="onSubmit"
+                android:padding="6sp"
+                android:layout_margin="2sp"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </TableRow>
+    </TableLayout>
+
+</TableLayout>
